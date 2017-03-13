@@ -1,6 +1,7 @@
 {
    "mailer":{
-      "service":"Gmail",
+      "service":"gmail",
+      "host": "smtp.gmail.com",
       "auth":{
          "user":"org.kaweesi.apps@gmail.com",
          "pass":"passphrase"
@@ -19,8 +20,9 @@
       "text":"",
       "html":""
    },
+   "keyWords":[""],
    "newsApi":{
-      "ApiKey":"key",
+      "ApiKey":"",
       "sources":[
          "cnn",
          "bbc-news",
