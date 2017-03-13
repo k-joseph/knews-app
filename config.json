@@ -4,7 +4,7 @@
       "host": "smtp.gmail.com",
       "auth":{
          "user":"org.kaweesi.apps@gmail.com",
-         "pass":"passphrase"
+         "pass":""
       }
    },
    "subscribers":[
@@ -20,9 +20,9 @@
       "text":"",
       "html":""
    },
-   "keyWords":[""],
+   "keyWords":["pope", "papacy", "vatican", "religion", "EU", "Lord", "Health", "GMO", "congress"],
    "newsApi":{
-      "ApiKey":"",
+      "ApiKey":"13947802910e4d009d51802fc07ade1e",
       "sources":[
          "cnn",
          "bbc-news",
