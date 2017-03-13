@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/k-joseph/knews-app/issues"
   },
-  "homepage": "https://github.com/k-joseph/knews-app#readme"
+  "homepage": "https://github.com/k-joseph/knews-app",
+  "dependencies": {
+    "jsonfile": "^2.4.0"
+  }
 }

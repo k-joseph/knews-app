@@ -1,3 +1,47 @@
 {
-
+   "mailer":{
+      "service":"Gmail",
+      "auth":{
+         "user":"org.kaweesi.apps@gmail.com",
+         "pass":"passphrase"
+      }
+   },
+   "subscribers":[
+      {
+         "name":"Kaweesi Joseph",
+         "emailAddress":"joseph.kaweesi2012@gmail.com"
+      }
+   ],
+   "mailDraft":{
+      "from":"KNews App <org.kaweesi.apps@gmail.com>",
+      "to":"",
+      "subject":"KNews: ",
+      "text":"",
+      "html":""
+   },
+   "newsApi":{
+      "ApiKey":"key",
+      "sources":[
+         "cnn",
+         "bbc-news",
+         "sky-news",
+         "daily-mail",
+         "independent",
+         "the-new-york-times",
+         "the-washington-post",
+         "time",
+         "usa-today",
+         "the-telegraph",
+         "cnbc",
+         "mirror",
+         "the-guardian-uk",
+         "the-guardian-au",
+         "google-news",
+         "hacker-news",
+         "reddit-r-all",
+         "techradar",
+         "business-insider",
+         "national-geographic"
+      ]
+   }
 }

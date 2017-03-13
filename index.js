@@ -1,5 +1,3 @@
-exports.printMsg = function() {
-  console.log("This is a message from the demo package");
-}
-
-printMsg();
+var jsonfile = require('jsonfile')
+var mailer = require("nodemailer");
+var schedule = require('node-schedule');
