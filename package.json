@@ -1,0 +1,26 @@
+{
+  "name": "knews-app",
+  "version": "1.0.0",
+  "description": "backend news headlines emailer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-joseph/knews-app.git"
+  },
+  "keywords": [
+    "news",
+    "cnn",
+    "bbc",
+    "news",
+    "headlines"
+  ],
+  "author": "Kaweesi Joseph <kaweesi.joseph2012@gmail.com> (https://github.com/k-joseph)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-joseph/knews-app/issues"
+  },
+  "homepage": "https://github.com/k-joseph/knews-app#readme"
+}
