@@ -4,9 +4,9 @@ var schedule = require('node-schedule');
 var articlesEndPoint = 'https://newsapi.org/v1/articles?';
 var sourcesEndPoint = 'https://newsapi.org/v1/sources?';
 var emailContent = '';
-		
+
+console.log('KNews App will email subcribers news headlines updates every 6 hours, keep this console open!');			
 schedule.scheduleJob('*/360 * * * *', function() {//runs every 6 hours
-	console.log('KNews App will email subcribers news headlines updates every 6 hours, keep this console open!');
 	jsonfile.readFile('config.json', function(err, configs) {
 		console.log('Starting to build news Headlines updates');
 		for(i = 0; i < configs.newsApi.sources.length; i++) {
