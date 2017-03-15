@@ -3,14 +3,17 @@ knews-app
 uses https://newsapi.org/ and then emails news headlines to subscribers
 
 
-# Required packages(npm modules)
 ___________________
-- npm install --save jsonfile
+Required packages(npm modules)
+___________________
+- npm install request
+- npm install jsonfile
 - npm install node-schedule
-- npm install nodemailer
+- npm install mailgun-js
 
 
-# Configuration
+___________________
+Configuration
 ___________________
 - Set mailer credentials
 - set newsapi sources basing on: https://newsapi.org/sources keys

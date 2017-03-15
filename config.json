@@ -1,26 +1,42 @@
 {
    "mailer":{
-      "service":"gmail",
-      "host": "smtp.gmail.com",
-      "auth":{
-         "user":"org.kaweesi.apps@gmail.com",
-         "pass":""
-      }
+      "apiKey":"key-0a6fcc1ae65cdab6e1c2bb00796145c8",
+      "domain":"sandboxfdcdb4833611429ab5c73f6ba827da9e.mailgun.org"
    },
    "subscribers":[
       {
-         "name":"Kaweesi Joseph",
-         "emailAddress":"joseph.kaweesi2012@gmail.com"
+         "name":"KNews App",
+         "emailAddress":"org.kaweesi.apps@gmail.com"
       }
    ],
    "mailDraft":{
       "from":"KNews App <org.kaweesi.apps@gmail.com>",
       "to":"",
-      "subject":"KNews: ",
-      "text":"",
+      "subject":"KNews App Update",
       "html":""
    },
-   "keyWords":["pope", "papacy", "vatican", "religion", "EU", "Lord", "Health", "GMO", "congress"],
+   "keyWords":[
+      "pope",
+      "papacy",
+      "vatican",
+      "religion",
+      "EU",
+      "Lord",
+      "Health",
+      "GMO",
+      "congress",
+      "pontiff",
+      "catholic",
+      "seventh",
+      "adventist",
+      "church",
+      "amendment",
+      "constitution",
+      "666",
+      "sunday law",
+      "mark of",
+      "Roman"
+   ],
    "newsApi":{
       "ApiKey":"13947802910e4d009d51802fc07ade1e",
       "sources":[
