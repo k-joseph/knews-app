@@ -33,7 +33,7 @@ var sourcesEndPoint = 'https://newsapi.org/v1/sources?';
 	  							
 	  							if(eC.indexOf(newEContent) < 0) {
 	  								emailContent += newEContent.replace(configs.keyWords[j],'<u>' +  configs.keyWords[j] + '</u>');
-	  								eC = newEContent;
+	  								eC += newEContent;
 	  							}
 	  						}
 	  					}
