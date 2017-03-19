@@ -6,7 +6,7 @@ uses https://newsapi.org/ and then emails news headlines to subscribers
 ___________________
 Required packages(npm modules)
 ___________________
-- npm install request
+- npm install sync-request
 - npm install jsonfile
 - npm install node-schedule
 - npm install mailgun-js
