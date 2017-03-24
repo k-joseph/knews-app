@@ -39,7 +39,7 @@
       "mark of",
       "Roman",
       "America",
-      "Republicans",
+      "Republican",
       "Protestant",
       "Ecumeni",
       "sabbath",
@@ -48,7 +48,8 @@
       "Jesus",
       "Christ",
       "the beast",
-      "sign",
+      " sign",
+      "sign ",
       "prophecy",
       "end of the world",
       "great controversy",
@@ -56,7 +57,9 @@
       "God",
       "creation",
       "evolution",
-      "human programming"
+      "human programming",
+      "democrat",
+      "extremist"
    ],
    "newsApi":{
       "ApiKey":"13947802910e4d009d51802fc07ade1e",
@@ -80,7 +83,10 @@
          "reddit-r-all",
          "techradar",
          "business-insider",
-         "national-geographic"
+         "national-geographic",
+         "the-hindu",
+         "new-scientist",
+         "metro"
       ]
    }
 }

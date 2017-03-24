@@ -29,3 +29,8 @@ ___________________
  2. apt-get install npm
  3. npm install knews-app
  4. npm start knews-app
+ 
+- Os X
+ 1. Add Auto execution cronjobs (run every workday at 10 and 20)
+    0 10 * * 1-5 node /Users/k-joseph/Projects/kaweesi/knews-app/index.js
+	0 20 * * 1-5 node /Users/k-joseph/Projects/kaweesi/knews-app/index.js

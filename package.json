@@ -1,7 +1,7 @@
 {
   "name": "knews-app",
   "version": "1.0.4",
-  "description": "backend news headlines emailer",
+  "description": "Backend news updates (from cnn, bcc, sky-news, daily-mail, independent, ustaday, newyork-times etc) emailer",
   "main": "index.js",
   "dependencies": {
     "jsonfile": "2.4.0",
@@ -22,7 +22,8 @@
     "cnn",
     "bbc",
     "news",
-    "headlines"
+    "headlines",
+    "newsapi"
   ],
   "author": "Kaweesi Joseph <kaweesi.joseph2012@gmail.com> (https://github.com/k-joseph)",
   "license": "ISC",

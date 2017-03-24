@@ -27,7 +27,7 @@ var sourcesEndPoint = 'https://newsapi.org/v1/sources?';
 	  							newEContent += 'Author(s): <b>' + bodyJson.articles[k].author + '</b><br/>';
 	  							newEContent += 'Published at: <b>' + bodyJson.articles[k].publishedAt + '</b><br/>';
 	  							newEContent += 'Source: <b>' + bodyJson.source.replace('-', ' ') + '</b><br/>';
-	  							newEContent += 'Reference: <b>' + bodyJson.articles[k].url;
+	  							newEContent += 'Reference: <b>' + bodyJson.articles[k].url + '</b>';
 	  							newEContent +='<hr>';
 	  							
 	  							
@@ -54,7 +54,6 @@ function sendEmailContent(emailContent, configs) {
  		var mail = configs.mailDraft;
  		
  		for(l=0; l < configs.subscribers.length; l++) {
- 			var subj = 'KNews App Update for: ' + new Date().toDateString();
  			mail.to = configs.subscribers[l].name + " <" + configs.subscribers[l].emailAddress + ">";
  			mail.html = emailContent;
  			mail.subject = 'KNews App Update for: ' + new Date().toDateString();
