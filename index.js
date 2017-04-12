@@ -22,12 +22,18 @@ var sourcesEndPoint = 'https://newsapi.org/v1/sources?';
 	  						if((bodyJson.articles[k].title && bodyJson.articles[k].title.indexOf(configs.keyWords[j]) > -1) || (bodyJson.articles[k].description && bodyJson.articles[k].description.indexOf(configs.keyWords[j]) > -1)) {
 	  							var newEContent = '';
 	  							
-	  							newEContent += '<h1>' + bodyJson.articles[k].title + '</h1>';
-	  							newEContent += '<p>' + bodyJson.articles[k].description + '</p>';
-	  							newEContent += 'Author(s): <b>' + bodyJson.articles[k].author + '</b><br/>';
-	  							newEContent += 'Published at: <b>' + bodyJson.articles[k].publishedAt + '</b><br/>';
-	  							newEContent += 'Source: <b>' + bodyJson.source.replace('-', ' ') + '</b><br/>';
-	  							newEContent += 'Reference: <b>' + bodyJson.articles[k].url + '</b>';
+	  							if(bodyJson.articles[k].title)
+	  								newEContent += '<h1>' + bodyJson.articles[k].title + '</h1>';
+	  							if(bodyJson.articles[k].description)
+	  								newEContent += '<p>' + bodyJson.articles[k].description + '</p>';
+	  							if(bodyJson.articles[k].description)
+	  								newEContent += 'Author(s): <b>' + bodyJson.articles[k].author + '</b><br/>';
+	  							if(bodyJson.articles[k].publishedAt)
+	  								newEContent += 'Published at: <b>' + bodyJson.articles[k].publishedAt + '</b><br/>';
+	  							if(bodyJson.source)
+	  								newEContent += 'Source: <b>' + bodyJson.source.replace('-', ' ') + '</b><br/>';
+	  							if(bodyJson.articles[k].url)
+	  								newEContent += 'Reference: <b>' + bodyJson.articles[k].url + '</b>';
 	  							newEContent +='<hr>';
 	  							
 	  							
