@@ -49,7 +49,7 @@
       "Christ",
       "the beast",
       " sign",
-      "sign ",
+      " sign ",
       "prophecy",
       "end of the world",
       "great controversy",
@@ -59,7 +59,8 @@
       "evolution",
       "human programming",
       "democrat",
-      "extremist"
+      "extremist",
+      "pastor"
    ],
    "newsApi":{
       "ApiKey":"13947802910e4d009d51802fc07ade1e",
@@ -67,7 +68,6 @@
          "cnn",
          "bbc-news",
          "al-jazeera-english",
-         "daily-mail",
          "independent",
          "the-new-york-times",
          "new-york-magazine",
@@ -87,8 +87,8 @@
          "business-insider-uk",
          "national-geographic",
          "the-hindu",
-         "new-scientist",
-         "metro"
+         "new-scientist"
       ]
-   }
+   },
+   "logMailsToFileSystem": true
 }

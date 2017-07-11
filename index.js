@@ -21,26 +21,46 @@ var sourcesEndPoint = 'https://newsapi.org/v1/sources?';
 	  					for(j=0; j < configs.keyWords.length; j++) {
 	  						if((bodyJson.articles[k].title && bodyJson.articles[k].title.indexOf(configs.keyWords[j]) > -1) || (bodyJson.articles[k].description && bodyJson.articles[k].description.indexOf(configs.keyWords[j]) > -1)) {
 	  							var newEContent = '';
+	  							var readableContent = '';
 	  							
-	  							if(bodyJson.articles[k].title)
+	  							if(bodyJson.articles[k].title) {
 	  								newEContent += '<h1>' + bodyJson.articles[k].title + '</h1>';
-	  							if(bodyJson.articles[k].description)
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Title: ' + bodyJson.articles[k].title + '\n';
+	  							}
+	  							if(bodyJson.articles[k].description) {
 	  								newEContent += '<p>' + bodyJson.articles[k].description + '</p>';
-	  							if(bodyJson.articles[k].description)
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Description: ' + bodyJson.articles[k].description + '\n';
+	  							}
+	  							if(bodyJson.articles[k].description) {
 	  								newEContent += 'Author(s): <b>' + bodyJson.articles[k].author + '</b><br/>';
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Author(s): ' + bodyJson.articles[k].author + '\n';
+	  							}
 	  							if(bodyJson.articles[k].publishedAt)
 	  								newEContent += 'Published at: <b>' + bodyJson.articles[k].publishedAt + '</b><br/>';
-	  							if(bodyJson.source)
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Published at: ' + bodyJson.articles[k].publishedAt + '\n';
+	  							if(bodyJson.source) {
 	  								newEContent += 'Source: <b>' + bodyJson.source.replace('-', ' ') + '</b><br/>';
-	  							if(bodyJson.articles[k].url)
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Source: ' + bodyJson.source.replace('-', ' ') + '\n';
+	  							}
+	  							if(bodyJson.articles[k].url) {
 	  								newEContent += 'Reference: <b>' + bodyJson.articles[k].url + '</b>';
+	  								if(configs.logMailsToFileSystem)
+	  									readableContent += 'Reference: ' + bodyJson.source.url + '\n';
+	  							}
 	  							newEContent +='<hr>';
-	  							
+	  							if(readableContent)
+	  								readableContent += '\n';
 	  							
 	  							if(eC.indexOf(newEContent) < 0) {
 	  								emailContent += newEContent.replace(configs.keyWords[j],'<u>' +  configs.keyWords[j] + '</u>');
 	  								eC += newEContent;
 	  							}
+	  							//TODO log readableContent to file System within loggedMails (create folder if it doesn't exist)
 	  						}
 	  					}
 	  				}
